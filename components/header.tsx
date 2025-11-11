@@ -22,7 +22,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 flex-shrink-0" aria-label="SP Electrical home">
           <Image
-            src="/logo.jpg"
+            src="/logo.svg"
             alt="SP Electrical logo"
             width={64}
             height={64}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-label="SP Electrical logo">
+  <rect width="320" height="360" rx="32" fill="#fff" opacity="0" />
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      d="M88 270L120 150L164 110L190 120L134 190L100 276Z"
+      fill="#0E4CA7"
+      stroke="#0E4CA7"
+      stroke-width="2"
+    />
+    <path
+      d="M110 262L144 146L188 110L212 118L156 186L122 288Z"
+      fill="#fff"
+      stroke="#fff"
+      stroke-width="2"
+    />
+    <path
+      d="M178 244L210 146L254 110L278 118L220 178L182 262Z"
+      fill="#C8102E"
+      stroke="#C8102E"
+      stroke-width="2"
+    />
+    <path
+      d="M210 56c40 8 74 40 78 80"
+      stroke="#C8102E"
+      stroke-width="18"
+      fill="none"
+    />
+    <polygon points="290,138 272,126 276,154" fill="#C8102E" />
+  </g>
+  <g fill="#C8102E">
+    <rect x="112" y="280" width="96" height="16" rx="8" />
+    <rect x="112" y="308" width="96" height="16" rx="8" />
+    <path d="M112 336h96l-24 32h-48z" />
+  </g>
+</svg>
