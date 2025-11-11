@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="relative hidden md:block">
             <div className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
               <Image
-                src="/south-africa.svg"
+                src="/south-africa.png"
                 alt="Map of South Africa highlighting service coverage"
                 width={1156}
                 height={521}
