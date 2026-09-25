@@ -23,7 +23,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-green-700 text-black font-bold text-lg py-6 px-8">
+              <Button className="bg-primary hover:bg-green-700 text-black font-bold text-lg py-6 px-8 glow-pulse">
                 Get Free Quote
               </Button>
               <Button

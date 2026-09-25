@@ -124,3 +124,58 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Electric theming: light-trim glow + click-to-recolor (see header.tsx) */
+
+/* Smoothly animate the accent color itself when it's changed at runtime */
+* {
+  transition: background-color 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+}
+
+@keyframes electric-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--primary) 55%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 22px 3px color-mix(in oklch, var(--primary) 45%, transparent);
+  }
+}
+
+.glow-pulse {
+  animation: electric-pulse 2.6s ease-in-out infinite;
+}
+
+/* Bulb-glow trim under the header, like an energized wire */
+.energized-trim {
+  box-shadow: 0 1px 0 0 var(--primary), 0 6px 18px -6px color-mix(in oklch, var(--primary) 60%, transparent);
+}
+
+/* Brief flash on the logo when its color is toggled */
+@keyframes bulb-flash {
+  0% {
+    filter: drop-shadow(0 0 0 transparent) brightness(1);
+    transform: scale(1);
+  }
+  35% {
+    filter: drop-shadow(0 0 18px var(--primary)) brightness(1.4);
+    transform: scale(1.08);
+  }
+  100% {
+    filter: drop-shadow(0 0 0 transparent) brightness(1);
+    transform: scale(1);
+  }
+}
+
+.bulb-flash {
+  animation: bulb-flash 500ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-pulse,
+  .bulb-flash,
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
