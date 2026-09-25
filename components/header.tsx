@@ -17,23 +17,23 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <header className="sticky top-0 z-50 bg-black border-b border-gray-800">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 flex-shrink-0" aria-label="SP Electrical home">
+        <a href="#home" className="flex items-center gap-3 flex-shrink-0" aria-label="SP Electrical Services home">
           <Image
-            src="/logo.svg"
-            alt="SP Electrical logo"
+            src="/globe-favicon-512.png"
+            alt="SP Electrical Services logo"
             width={64}
             height={64}
             priority
             className="h-14 w-14 rounded bg-black object-contain"
           />
           <div>
-            <div className="text-2xl font-bold text-black leading-none">
-              SP <span className="text-primary">Electrical</span>
+            <div className="text-2xl font-bold text-white leading-none">
+              SP <span className="text-primary">Electrical</span> Services
             </div>
-            <p className="text-xs text-gray-600">Professional Services</p>
+            <p className="text-xs text-gray-400">Professional Electricians</p>
           </div>
         </a>
 
@@ -43,7 +43,7 @@ export default function Header() {
             <a
               key={item.label}
               href={item.href}
-              className="text-gray-700 hover:text-primary font-medium transition-colors"
+              className="text-gray-300 hover:text-primary font-medium transition-colors"
             >
               {item.label}
             </a>
@@ -57,19 +57,19 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
-          {isOpen ? <X className="w-6 h-6 text-black" /> : <Menu className="w-6 h-6 text-black" />}
+          {isOpen ? <X className="w-6 h-6 text-white" /> : <Menu className="w-6 h-6 text-white" />}
         </button>
       </nav>
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
+        <div className="md:hidden bg-black border-t border-gray-800">
           <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="block text-gray-700 hover:text-primary font-medium py-2"
+                className="block text-gray-300 hover:text-primary font-medium py-2"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
